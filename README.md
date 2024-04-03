@@ -10,7 +10,7 @@ Anyone has the ability to create a new account, and every freshly registered use
 
 
 ## Requirements
-- **Auth0** - You need to have auth0 account, and create new app. Get domain and clientId of new app then create new environment variables `VITE_AUTH0_DOMAIN` and `VITE_AUTH0_CLIENTID` respectively  
+- **Auth0** - You need to have auth0 account, and create new app. Get domain and clientId of new app then create new environment variables `VITE_AUTH0_DOMAIN` and `VITE_AUTH0_CLIENTID` respectively. You should also copy auth0>actions>login.flow.js and create new login flow in auth0 to include user roles in their token claim.
 - **Github** - Github gists is used to store notes, because its free and secure🤞. Get your access token and create new gist then collect values in .env file `VITE_GISTS_TOKEN`, `VITE_GISTS_ID` and `VITE_GISTS_NAME` respectively
 
 ## How to start
