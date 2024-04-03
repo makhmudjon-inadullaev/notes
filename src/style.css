@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.notes-enter-active, .notes-leave-active {
+    transition: all 0.5s;
+  }
+.notes-enter, .notes-leave-to /* .list-leave-active below version 2.1.8 */ {
+    opacity: 0;
+    transform: translateX(-295px);
+}
+.notes-move {
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
